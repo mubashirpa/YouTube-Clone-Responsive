@@ -282,6 +282,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate">MrBeast</span>
                   <img
@@ -303,6 +304,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate">Panda</span>
                   <img
@@ -324,6 +326,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate"
                     >Kotlin by JetBrains</span
@@ -343,6 +346,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate"
                     >Brototype Malayalam</span
@@ -362,6 +366,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate">Philipp Lackner</span>
                   <span class="trailing newness-dot rounded-pill"></span>
@@ -379,6 +384,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate"
                     >Marques Brownlee</span
@@ -398,6 +404,7 @@
                     class="leading rounded-pill"
                     width="24"
                     height="24"
+                    loading="lazy"
                   />
                   <span class="flex-grow-1 text-truncate">Mrwhosetheboss</span>
                   <span class="trailing newness-dot rounded-pill"></span>
@@ -885,7 +892,15 @@
               data-bs-placement="bottom"
               data-bs-title="Notifications"
             >
-              <img src="images/notifications.svg" alt="Notifications" />
+              <div class="position-relative">
+                <img src="images/notifications.svg" alt="Notifications" />
+                <span
+                  class="position-absolute translate-middle badge rounded-pill d-flex align-items-center justify-content-center"
+                  id="notification-badge"
+                >
+                  9+
+                </span>
+              </div>
             </div>
 
             <div
@@ -898,6 +913,7 @@
                 alt="Profile"
                 class="rounded-pill"
                 id="navbar-profile-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -1133,6 +1149,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate">MrBeast</span>
                 <img
@@ -1154,6 +1171,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate">Panda</span>
                 <img
@@ -1175,6 +1193,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate"
                   >Kotlin by JetBrains</span
@@ -1194,6 +1213,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate"
                   >Brototype Malayalam</span
@@ -1213,6 +1233,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate">Philipp Lackner</span>
                 <span class="trailing newness-dot rounded-pill"></span>
@@ -1230,6 +1251,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate">Marques Brownlee</span>
                 <span class="trailing newness-dot rounded-pill"></span>
@@ -1247,6 +1269,7 @@
                   class="leading rounded-pill"
                   width="24"
                   height="24"
+                  loading="lazy"
                 />
                 <span class="flex-grow-1 text-truncate">Mrwhosetheboss</span>
                 <span class="trailing newness-dot rounded-pill"></span>
@@ -1787,6 +1810,7 @@
                     src="images/channel5.webp"
                     alt="Philipp Lackner"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">
@@ -1818,6 +1842,7 @@
                     src="images/channel6.webp"
                     alt="Marques Brownlee"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">iOS 18 Hands-On: Top 5 Features!</h3>
@@ -1846,6 +1871,7 @@
                     src="images/channel7.webp"
                     alt="Mrwhosetheboss"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">
@@ -1862,10 +1888,13 @@
 
             <!-- Shorts -->
             <div class="col-12" style="padding: 0 16px">
+              <!-- Shorts header -->
               <div class="d-flex" id="shorts-header">
                 <img src="images/shorts-red.svg" alt="Shorts" />
                 <span>Shorts</span>
               </div>
+
+              <!-- Shorts items -->
               <div
                 class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 flex-nowrap"
                 id="shorts-row"
@@ -1876,6 +1905,7 @@
                       src="images/shorts1.webp"
                       alt="Shorts"
                       class="thumbnail ratio ratio-16x9"
+                      loading="lazy"
                     />
                     <div class="details d-flex">
                       <div class="headline flex-fill">
@@ -1893,6 +1923,7 @@
                       src="images/shorts2.webp"
                       alt="Shorts"
                       class="thumbnail ratio ratio-16x9"
+                      loading="lazy"
                     />
                     <div class="details d-flex">
                       <div class="headline flex-fill">
@@ -1910,6 +1941,7 @@
                       src="images/shorts3.webp"
                       alt="Shorts"
                       class="thumbnail ratio ratio-16x9"
+                      loading="lazy"
                     />
                     <div class="details d-flex">
                       <div class="headline flex-fill">
@@ -1929,6 +1961,7 @@
                       src="images/shorts4.webp"
                       alt="Shorts"
                       class="thumbnail ratio ratio-16x9"
+                      loading="lazy"
                     />
                     <div class="details d-flex">
                       <div class="headline flex-fill">
@@ -1948,6 +1981,7 @@
                       src="images/shorts5.webp"
                       alt="Shorts"
                       class="thumbnail ratio ratio-16x9"
+                      loading="lazy"
                     />
                     <div class="details d-flex">
                       <div class="headline flex-fill">
@@ -1960,6 +1994,22 @@
                     </div>
                   </a>
                 </div>
+              </div>
+
+              <!-- Show more container -->
+              <div
+                class="d-none d-sm-flex align-items-center justify-content-evenly"
+                id="show-more-container"
+              >
+                <hr class="divider flex-fill" />
+                <div
+                  class="d-flex justify-content-center align-items-center"
+                  id="show-more"
+                >
+                  <span>Show more</span>
+                  <img src="images/arrow-down.svg" alt="Show more" />
+                </div>
+                <hr class="divider flex-fill" />
               </div>
             </div>
 
@@ -1979,6 +2029,7 @@
                     src="images/channel3.webp"
                     alt="Kotlin by JetBrains"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">
@@ -2010,6 +2061,7 @@
                     src="images/channel1.webp"
                     alt="MrBeast"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">World's Deadliest Obstacle Course!</h3>
@@ -2038,6 +2090,7 @@
                     src="images/channel2.webp"
                     alt="Panda"
                     class="leading rounded-pill"
+                    loading="lazy"
                   />
                   <div class="headline flex-fill">
                     <h3 class="title">I GOT NEW M4 Glacier in 2024!! 😱</h3>
